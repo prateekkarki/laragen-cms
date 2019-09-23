@@ -19,21 +19,21 @@ return [
 
     'categories' => [],
 
-    'requires' => [],
+    'extras' => [],
 
     'products' => [
         'structure' => [
             'title'             => 'string|max:128',
             'slug'              => 'string|max:128|unique|required',
-            'asadwes'             => 'related:requires',
+            'teams'             => 'related:extras',
             'image'             => 'image',
             'sdades'            => 'gallery',
             'category'          => 'parent:categories',
             'short_description' => 'string',
             'extra_sauces' => [
-                'title'             => 'string|max:128',
-                'dasd'             => 'boolean',
-                'dasd'             => 'boolean',
+                'title'             => 'string|max:256',
+                'checks'             => 'boolean',
+                'another_par'             => 'parent:extras',
             ]
         ]
     ],
