@@ -4,17 +4,17 @@ return [
         'Common' => [
             'Migration',
             'Model',
-            'Seeder',
-            'Route'
+            // 'Seeder',
+            // 'Route'
         ],
         'Frontend' => [
             // 'Controller',
         ],
         'Backend' => [
-            'Controller',
-            'Api',
-            'Request',
-            'View',
+            // 'Controller',
+            // 'Api',
+            // 'Request',
+            // 'View',
             // 'Notification',
             // 'Observer'
         ]
