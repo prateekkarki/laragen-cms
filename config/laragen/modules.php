@@ -19,13 +19,22 @@ return [
 
     'categories' => [],
 
+    'requires' => [],
+
     'products' => [
         'structure' => [
             'title'             => 'string|max:128',
             'slug'              => 'string|max:128|unique|required',
+            'asadwes'             => 'related:requires',
             'image'             => 'image',
+            'sdades'            => 'gallery',
             'category'          => 'parent:categories',
-            'short_description' => 'string'
+            'short_description' => 'string',
+            'extra_sauces' => [
+                'title'             => 'string|max:128',
+                'dasd'             => 'boolean',
+                'dasd'             => 'boolean',
+            ]
         ]
     ],
 
