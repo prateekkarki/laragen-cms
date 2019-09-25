@@ -19,12 +19,6 @@ return [
             // 'Observer'
         ]
     ],
-    'files_to_publish' => [
-        // 'public',
-        // 'app',
-        // 'database',
-        // 'resources',
-    ],
     'image_sizes' => [
         'sm' => '500x500',
         'md' => '800x800',
