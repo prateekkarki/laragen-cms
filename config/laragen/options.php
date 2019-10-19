@@ -11,7 +11,7 @@ return [
             // 'Controller',
         ],
         'Backend' => [
-            // 'Controller',
+            'Controller',
             // 'Api',
             // 'Request',
             // 'View',
