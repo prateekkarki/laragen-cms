@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Symfony\Component\Filesystem\Filesystem;
 use Validator;
 use Image;
@@ -32,7 +33,7 @@ class UploadController extends Controller
 
     /**
      * @return json
-     * 
+     *
      */
     protected $validation_error = [];
 
@@ -46,16 +47,16 @@ class UploadController extends Controller
 
         if ($valid) {
             $imagename = $this->getWritableFilename(Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)).'.'.$file->getClientOriginalExtension(), $moduleName, true);
-    
+
             $destinationPath = $this->temp_path.$moduleName;
             $file->move($destinationPath, $imagename);
-    
+
             return response()->json(['message' => 'File successfully uploaded', 'filename' => $imagename], 200);
         }
 
         return response()->json(['message' => $this->validation_error, 'filename' => false], 500);
     }
-    
+
     public function uploadGallery(Request $request)
     {
         $moduleName = $request->input('moduleName');
@@ -131,12 +132,12 @@ class UploadController extends Controller
         $filenameToStore = $this->getFilenameToStore($filename);
         $img = Image::make($filePath);
         $imgSize = $img->filesize();
-        
+
         foreach ($this->thumbnail_sizes as $thumbType => $thumbSizes)
         {
             $thumbDir          = $thumbType;
             [$width, $height]  = explode('x', $thumbSizes);
-            
+
             $dir = $this->image_path.$moduleName.'/'.$thumbDir;
 
             $img->resize($width, $height, function($constraint) {
@@ -171,7 +172,7 @@ class UploadController extends Controller
         if (file_exists($path)) {
             $filename = pathinfo($path, PATHINFO_FILENAME);
             $filename .= rand(0, 9).'.'.pathinfo($path, PATHINFO_EXTENSION);
-            return $this->getWritableFilename($filename, $moduleName, $is_storage); 
+            return $this->getWritableFilename($filename, $moduleName, $is_storage);
         } else {
             return $is_storage ? $filename : $path;
         }
