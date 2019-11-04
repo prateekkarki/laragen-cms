@@ -5,16 +5,16 @@ return [
             'Migration',
             'Model',
             'Seeder',
-            // 'Route'
+            'Route'
         ],
         'Frontend' => [
             // 'Controller',
         ],
         'Backend' => [
             'Controller',
-            // 'Api',
-            // 'Request',
-            // 'View',
+            'Api',
+            'Request',
+            'View',
             // 'Notification',
             // 'Observer'
         ]
