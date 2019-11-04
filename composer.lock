@@ -1262,12 +1262,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prateekkarki/laragen.git",
-                "reference": "3fa84b6a4c441805c3a42b3a229b0554fbf62f60"
+                "reference": "8c1d75fa391ece18e43dfa824be9c52e544dc385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prateekkarki/laragen/zipball/3fa84b6a4c441805c3a42b3a229b0554fbf62f60",
-                "reference": "3fa84b6a4c441805c3a42b3a229b0554fbf62f60",
+                "url": "https://api.github.com/repos/prateekkarki/laragen/zipball/8c1d75fa391ece18e43dfa824be9c52e544dc385",
+                "reference": "8c1d75fa391ece18e43dfa824be9c52e544dc385",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1311,7 @@
                 "laragen",
                 "prateekkarki"
             ],
-            "time": "2019-09-23T03:47:12+00:00"
+            "time": "2019-09-23T05:23:02+00:00"
         },
         {
             "name": "psr/container",
