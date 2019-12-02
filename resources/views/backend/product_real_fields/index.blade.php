@@ -94,7 +94,7 @@
                                         
                                     </td>
                                     <td>
-                                        <a href="{{ route('product_real_fields.show', $product_real_field) }}" target="_blank" class="btn btn-info">
+                                        <a href="#sdfg" target="_blank" class="btn btn-info">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
                                         <a href="{{ route('backend.product_real_fields.edit', $product_real_field) }}" class="btn btn-primary">

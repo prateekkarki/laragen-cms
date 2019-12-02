@@ -94,7 +94,7 @@
                                         
                                     </td>
                                     <td>
-                                        <a href="{{ route('product_extra_sauces.show', $product_extra_sauce) }}" target="_blank" class="btn btn-info">
+                                        <a href="#sdfg" target="_blank" class="btn btn-info">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
                                         <a href="{{ route('backend.product_extra_sauces.edit', $product_extra_sauce) }}" class="btn btn-primary">

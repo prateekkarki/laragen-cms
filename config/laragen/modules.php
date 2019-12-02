@@ -27,7 +27,7 @@ return [
             'slug'              => 'string|max:128|unique|required',
             'teams'             => 'related:extras',
             'image'             => 'image',
-            'real_field'            => 'gallery',
+            'real_field'        => 'gallery',
             'category'          => 'parent:categories',
             'short_description' => 'string',
             'extra_sauces' => [
