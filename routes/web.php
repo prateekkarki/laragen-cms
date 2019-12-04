@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/generate', function () {
+    $generator = new Prateekkarki\Laragen\Commands\Generate();
+    $generator->handle();
+});

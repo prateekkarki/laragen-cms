@@ -8,8 +8,6 @@ return [
             'Route',
             'Resource',
             'JsonResourceCollection',
-        ],
-        'Frontend' => [
             'ApiController',
         ],
         'Backend' => [
