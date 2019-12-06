@@ -11,38 +11,52 @@
 
 		{{-- Main Menu --}}
 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> ProductExtraSauces </span></a>
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Settings </span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-link" href="{{ route("backend.product_extra_sauces.create") }}"> Add new ProductExtraSauces</a></li>
-                        <li><a class="nav-link" href="{{ route("backend.product_extra_sauces.index") }}">All ProductExtraSauces</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.settings.create") }}"> Add new Settings</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.settings.index") }}">All Settings</a></li>
                     </ul>
                 </li>
 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> ProductRealFields </span></a>
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Employees </span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-link" href="{{ route("backend.product_real_fields.create") }}"> Add new ProductRealFields</a></li>
-                        <li><a class="nav-link" href="{{ route("backend.product_real_fields.index") }}">All ProductRealFields</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.employees.create") }}"> Add new Employees</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.employees.index") }}">All Employees</a></li>
                     </ul>
                 </li>
 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Products </span></a>
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Parkings </span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-link" href="{{ route("backend.products.create") }}"> Add new Products</a></li>
-                        <li><a class="nav-link" href="{{ route("backend.products.index") }}">All Products</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.parkings.create") }}"> Add new Parkings</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.parkings.index") }}">All Parkings</a></li>
                     </ul>
                 </li>
 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Extras </span></a>
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Bookings </span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-link" href="{{ route("backend.extras.create") }}"> Add new Extras</a></li>
-                        <li><a class="nav-link" href="{{ route("backend.extras.index") }}">All Extras</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.bookings.create") }}"> Add new Bookings</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.bookings.index") }}">All Bookings</a></li>
                     </ul>
                 </li>
 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Categories </span></a>
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> VehicleTypes </span></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-link" href="{{ route("backend.categories.create") }}"> Add new Categories</a></li>
-                        <li><a class="nav-link" href="{{ route("backend.categories.index") }}">All Categories</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.vehicle_types.create") }}"> Add new VehicleTypes</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.vehicle_types.index") }}">All VehicleTypes</a></li>
+                    </ul>
+                </li>
+<li class="nav-item dropdown">
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> LocationSubLocations </span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-link" href="{{ route("backend.location_sub_locations.create") }}"> Add new LocationSubLocations</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.location_sub_locations.index") }}">All LocationSubLocations</a></li>
+                    </ul>
+                </li>
+<li class="nav-item dropdown">
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span> Locations </span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-link" href="{{ route("backend.locations.create") }}"> Add new Locations</a></li>
+                        <li><a class="nav-link" href="{{ route("backend.locations.index") }}">All Locations</a></li>
                     </ul>
                 </li>
 

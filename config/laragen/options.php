@@ -15,7 +15,6 @@ return [
             'Api',
             'Request',
             'View',
-            // 'Notification',
             // 'Observer'
         ]
     ],

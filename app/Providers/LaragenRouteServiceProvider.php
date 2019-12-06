@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Route;
@@ -33,23 +34,5 @@ class LaragenRouteServiceProvider extends ServiceProvider
      * @return void
      */
     public function map()
-    {
-        Route::middleware(['web', 'auth'])
-            ->prefix('admin')
-            ->name('backend.')
-            ->group(base_path('routes/backend/web.php'));
-
-        Route::middleware(['api'])
-            ->prefix('admin/api')
-            ->name('backend.api.')
-            ->group(base_path('routes/backend/api.php'));
-
-        Route::middleware('web')
-                ->prefix('admin')
-                ->name('backend.')
-                ->group(base_path('routes/backend/auth.php'));
-
-        Route::middleware('web')
-            ->group(base_path('routes/frontend/web.php'));
-    }
+    { }
 }
